@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root {
+  --color-bg: aliceblue;
+  --color-text: #342a21;
+  --color-underline: black;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: var(--color-bg);
+  height: 300vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--color-text);
+}
+
+.menu-item {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.menu-list {
+  --underline-width: 0;
+  --underline-offset-x: 0;
+
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 4px;
+  width: var(--underline-width);
+  transform: translateX(var(--underline-offset-x));
+  background-color: var(--color-underline);
+  transition: transform 0.5s, width 0.5s;
+  border-radius: 4px;
+}
+
+.menu-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+#about-me {
+
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.image {
+    margin-top: 10vh;
+    display: block;
+    margin: auto;
+}
+img {
+    display: block;
+    margin: auto;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 2rem;
+}
+
+.education {
+    display: grid;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-left {
+    margin-top: 5vh;
+    margin-left: 40vh;
+    padding: 10px;
+    text-align: center;
+    /* float: left; */
+    height: 20vh;
+    width: 45vh;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-right {
+    margin-top: 5vh;
+    margin-right: 40vh;
+    padding: 10px;
+    text-align: center;
+    /* float: right; */
+    height: 20vh;
+    width: 45vh;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.skills {
+    margin-top: 5vh;
+}
