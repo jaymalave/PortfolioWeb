@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,11 @@
         
         <nav class="menu">
           <ul class="menu-list">
-            <li class="menu-item" id = "about"><a href="#" class="menu-link">About me</a></li>
-            <li class="menu-item" id = "education"><a href="#" class="menu-link">Education</a></li>
-            <li class="menu-item" id = "education"><a href="#" class="menu-link">Skills</a></li>
-            <li class="menu-item" id = "projects"><a href="#" class="menu-link">Projects</a></li>
-            <li class="menu-item" id = "contact"><a href="#" class="menu-link">Contact Me</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">About me</a></li>
+            <li class="menu-item" onclick="smoothScroll(document.getElementById('education'))"><a href="#" class="menu-link">Education</a></li>
+            <li class="menu-item" onclick="smoothScroll(document.getElementById('skills'))"><a href="#" class="menu-link">Skills</a></li>
+            <li class="menu-item" onclick="smoothScroll(document.getElementById('projects'))"><a href="#" class="menu-link">Projects</a></li>
+            <li class="menu-item" onclick="smoothScroll(document.getElementById('contact'))"><a href="#" class="menu-link">Contact Me</a></li>
           </ul>
         </nav>
       </header>
@@ -28,7 +29,7 @@
           I am a Computer Science Undergrad Sophomore at KJ Somaiya College of Engineering.<br>
           I am an aspiring software developer based in Mumbai, India.
       </div>
-      <div class="education">
+      <div class="education" id = "education">
           <h3>Education</h3>
           <div class="card-left">
               <h2>I.E.S V.N Sule Guruji School, Dadar-E, Mumbai</h2>
@@ -43,7 +44,7 @@
             <p>2020-2024(Expected)</p>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills" id = "skills">
           <h3>Skills</h3>
           <div class="langs">
             <div class="chip">
@@ -99,8 +100,28 @@
                 Docker
               </div>
           </div>
+          <div class="langs">
+            <div class="chip">
+                <img src="mongodb.png" alt="Python" width="96" height="96">
+                MongoDB 
+              </div>
+              <div class="chip">
+                <img src="selenium.jpeg" alt="Python" width="96" height="96">
+                Selenium
+              </div>
+          </div>
       </div>
-
+      <div class="projects" id = "projects">
+        <h3>Projects</h3>
+        <h4><a href = "https://github.com/jaymalave?tab=repositories" target="_blank">View on Github<i class="fa fa-external-link" aria-hidden="true"></i></a></h4>
+      </div>
+     <div class="contact" id = "contact">
+       <h3>Contact Me</h3>
+       <div class="platforms">
+       <div class="linkedin"><a href = "https://www.linkedin.com/in/jay-malave-0098a01ba/" target = "_blank" class = "lin"><span><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</span>LinkedIn</a></div>
+       <div class="gmail"><i class="fa fa-envelope"></i>&nbsp;jay.malave73@gmail.com</div>
+       </div>
+     </div>
       <script src="script.js"></script>
 </body>
 </html>
