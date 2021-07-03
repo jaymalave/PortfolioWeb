@@ -9,8 +9,7 @@
     <title>Jay Malave</title>
 </head>
 <body>
-    <header>
-        
+    <div class = "goto">
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-item"><a href="#" class="menu-link">About me</a></li>
@@ -19,7 +18,7 @@
             <li class="menu-item" onclick="smoothScroll(document.getElementById('projects'))"><a href="#" class="menu-link">Projects</a></li>
             <li class="menu-item" onclick="smoothScroll(document.getElementById('contact'))"><a href="#" class="menu-link">Contact Me</a></li>
           </ul>
-        </nav>
+        </div>
       </header>
       <div class="image">
       <img src="assets/portfolio.jpeg" alt="">
@@ -123,5 +122,24 @@
        </div>
      </div>
       <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  const options = {
+  top: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  right: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
 </body>
 </html>
