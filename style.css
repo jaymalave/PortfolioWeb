@@ -76,11 +76,11 @@ h1 {
 .image {
     margin-top: 10vh;
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
 }
-img {
-    display: block;
-    margin-left: 37rem;
+img { 
     height: 35vh;
     width: 35vh;
     border-radius: 50%;
@@ -188,3 +188,5 @@ h3 {
   .lin {
     text-decoration: none;
   }
+
+ 
