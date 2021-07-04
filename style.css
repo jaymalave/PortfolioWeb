@@ -189,4 +189,11 @@ h3 {
     text-decoration: none;
   }
 
+  .copy-btn {
+    background-color: aliceblue;
+    color: black;
+    border: 4px inset darkgray;
+    cursor: pointer;
+  }
+
  

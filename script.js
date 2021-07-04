@@ -39,3 +39,11 @@ window.smoothScroll = function(target) {
   
   scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+//copy to clipboard
+
+function handleCopyText() {
+  const cb = navigator.clipboard;
+  const paragraph = document.getElementById("copy-selector");
+  cb.writeText(paragraph.innerText).then(() => alert('Text copied'));
+}
