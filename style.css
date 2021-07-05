@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Source+Sans+Pro&display=swap');
 
-:root {
-  --color-bg: aliceblue;
-}
 
 body {
   font-family: "Oswald", sans-serif;
-  background-color: var(--color-bg);
   /* height: 400vh; */
 }
 
@@ -20,9 +17,43 @@ body {
   margin-bottom: 10vh;
 }
 
+.name {
+  display: grid;
+  place-content: center;
+}
+
 h1 {
+  color: darkcyan;
+  font-family: "Source Code Pro",monospace;
+  font-weight: 1000;
+  text-align: center;
   font-size: 3rem;
-  color: black;
+  position: relative;
+  width: max-content;
+}
+
+
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background-color: white;
+  animation: typewriter 1s steps(10) forwards;
+}
+
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
 }
 
 .menu-item {

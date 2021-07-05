@@ -45,5 +45,5 @@ window.smoothScroll = function(target) {
 function handleCopyText() {
   const cb = navigator.clipboard;
   const paragraph = document.getElementById("copy-selector");
-  cb.writeText(paragraph.innerText).then(() => alert('Text copied'));
+  cb.writeText(paragraph.innerText).then(() => alert('E-mail ID copied'));
 }
